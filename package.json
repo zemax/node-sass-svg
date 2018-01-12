@@ -1,13 +1,21 @@
 {
 	"name":            "node-sass-svg",
-	"version":         "1.0.0",
 	"description":     "Import SVG into background-image: url(...)",
+	"version":         "1.0.1",
+	"author":          "Maxime Cousinou",
+	"homepage":        "https://github.com/zemax/node-sass-svg",
+	"license":         "MIT",
 	"main":            "svg-function.js",
+	"repository":      {
+		"type": "git",
+		"url":  "git+https://github.com/zemax/node-sass-svg.git"
+	},
+	"bugs":            {
+		"url": "https://github.com/zemax/node-sass-svg/issues"
+	},
 	"scripts":         {
 		"test": "node-sass --functions=./svg-function.js --importer=./svg-importer.js test/src/styles.scss test/dist/styles.css"
 	},
-	"author":          "Maxime Cousinou",
-	"license":         "ISC",
 	"devDependencies": {
 		"node-sass": "^4.7.2"
 	}
