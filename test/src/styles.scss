@@ -1,7 +1,21 @@
 body {
+	margin:           0;
+	padding:          0;
+
 	font-family:      sans-serif;
 	color:            #333333;
 	background-color: #f0f0f0;
+}
+
+p {
+	margin-top: 0;
+}
+
+.block {
+	margin:           1rem;
+	padding:          1rem;
+	background-color: white;
+	box-shadow:       0 0 1rem rgba(0, 0, 0, .5);
 }
 
 @import "components/picto-smiley";

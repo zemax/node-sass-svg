@@ -1,8 +1,8 @@
-#node-sass-svg
+# node-sass-svg
 
-Inline **svg** files into **css** with node-sass.
+Inline external **svg** files into **css** with node-sass, replacing **sass variables** colors.
 
-**Warning: uses experimental features, use it at your own risks**
+**Warning: uses node-sass experimental features, use it at your own risks**
 
 The **svg** encoding is based on [yoksel encoding](http://yoksel.github.io/url-encoder) which is far lighter than using base64.
 
@@ -14,9 +14,9 @@ $ npm install --save-dev node-sass-svg
 
 ## Usage
 
-You can use this as a custom function, a custom importer (or both)
+You can use this as a custom function, a custom importer, or both.
 
-Look at the _test/_ for simple examples.
+Look at the _test/_ for simple examples. The result is [here](http://htmlpreview.github.io/?https://github.com/zemax/node-sass-svg/blob/master/test/index.html).
 
 ### As a custom importer
 
