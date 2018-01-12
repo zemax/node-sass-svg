@@ -1,0 +1,10 @@
+$red: #ff6666;
+$green: #66ff66;
+$blue: #6666ff;
+
+.smileysheet {
+	display: block;
+	width:   100px;
+	height:  300px;
+	@import 'picto-smileysheet.svg';
+}

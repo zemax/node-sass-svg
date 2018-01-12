@@ -1,0 +1,14 @@
+{
+	"name":            "node-sass-svg",
+	"version":         "1.0.0",
+	"description":     "Import SVG into background-image: url(...)",
+	"main":            "svg-function.js",
+	"scripts":         {
+		"test": "node-sass --functions=./svg-function.js --importer=./svg-importer.js test/src/styles.scss test/dist/styles.css"
+	},
+	"author":          "Maxime Cousinou",
+	"license":         "ISC",
+	"devDependencies": {
+		"node-sass": "^4.7.2"
+	}
+}
