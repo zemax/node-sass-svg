@@ -1,7 +1,7 @@
 {
 	"name": "node-sass-svg",
 	"description": "Import SVG into background-image: url(...)",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"author": "Maxime Cousinou",
 	"homepage": "https://github.com/zemax/node-sass-svg",
 	"license": "MIT",
