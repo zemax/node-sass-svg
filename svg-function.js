@@ -1,13 +1,24 @@
-var types      = require( 'node-sass' ).types;
-var fs         = require( 'fs' );
-var encode_svg = require( './lib/encode-svg' );
+const path  = require( 'path' );
+const fs    = require( 'fs' );
+const types = require( 'sass' ).types;
 
-module.exports = {
-	'svg($filename)': function ( filename_sass ) {
-		var filename = filename_sass.getValue();
-		var svg      = fs.readFileSync( filename, 'utf8' );
+const encode_svg = require( './lib/encode-svg' );
 
-		var encoded = encode_svg( svg );
-		return new types.String( 'url("data:image/svg+xml,' + encoded + '")' );
-	}
-};
+module.exports = ( basePath = './' ) => ({
+    'svg($filename, $mapping: ())': function ( svgFileName, mapping ) {
+        const filename = path.resolve( basePath, svgFileName.getValue() );
+        let svg        = fs.readFileSync( filename, 'utf8' );
+        svg            = encode_svg( svg );
+        
+        if ( mapping instanceof types.Map ) {
+            for ( let i = 0, l = mapping.getLength(); i < l; i++ ) {
+                const key   = mapping.getKey( i ).getValue();
+                const value = mapping.getValue( i ).toString();
+                
+                svg = svg.replace( `'$${key}'`, `'${encodeURIComponent( value )}'` );
+            }
+        }
+        
+        return new types.String( 'url("data:image/svg+xml,' + svg + '")' );
+    }
+});

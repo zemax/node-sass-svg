@@ -18,5 +18,24 @@ p {
 	box-shadow:       0 0 1rem rgba(0, 0, 0, .5);
 }
 
-@import "components/picto-smiley";
-@import "components/picto-smileysheet";
+.smiley {
+	display:             block;
+	width:               100px;
+	height:              100px;
+
+	background-repeat:   no-repeat;
+	background-position: 0 0;
+
+	cursor:              pointer;
+
+	&:hover {
+		background-position: 0 -100px;
+	}
+
+	&:active {
+		background-position: 0 -200px;
+	}
+}
+
+@import "components/test-function";
+@import "components/test-import";

@@ -7,12 +7,16 @@
 </head>
 <body>
 <div class="block">
-	<p>Usage as a funtion : <em>svg()</em> becames <em>url()</em> with inline svg</p>
-	<div class="smiley"></div>
+	<p>Usage as a function : <em>svg(filename, options : ('color1': $color1, 'color2': $color2...)</em> becames <em>url()</em> with inline svg. Options is a SassMap of key-values which will be replaced in the svg (use case : colors !)</p>
+	<div class="smiley smiley--url"></div>
 </div>
 <div class="block">
-	<p>Usage as an <em>@import</em> to inject sass colors and use svg as an optimised spritesheet with symbols</p>
-	<div class="smileysheet"></div>
+	<p>Usage as a function with CSS custom property</p>
+	<div class="smiley smiley--var"></div>
+</div>
+<div class="block">
+	<p>Usage as an <em>@import('filename')</em> : imports svg as background-imgae: url(...).</p>
+	<div class="smiley smiley--import"></div>
 </div>
 </body>
 </html>

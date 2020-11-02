@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="300" viewBox="0 0 100 300">
-	<symbol id="a">
-		<path d="M50 0a50 50 0 1 0 50 50A50 50 0 0 0 50 0zM22.5 30a7.5 7.5 0 1 1 7.5 7.5 7.5 7.5 0 0 1-7.5-7.5zM50 74h.5-1 .5c-10.82-.16-19.5-5.45-19.5-12h39c0 6.53-8.68 11.82-19.5 12zm20-36.5a7.5 7.5 0 1 1 7.5-7.5 7.5 7.5 0 0 1-7.5 7.5z"/>
-	</symbol>
-	<use xlink:href="#a" fill="$red"/>
-	<use xlink:href="#a" y="100" fill="$green"/>
-	<use xlink:href="#a" y="200" fill="$blue"/>
+    <symbol id="a">
+        <path d="M50 0a50 50 0 1 0 50 50A50 50 0 0 0 50 0zM22.5 30a7.5 7.5 0 1 1 7.5 7.5 7.5 7.5 0 0 1-7.5-7.5zM50 74h.5-1 .5c-10.82-.16-19.5-5.45-19.5-12h39c0 6.53-8.68 11.82-19.5 12zm20-36.5a7.5 7.5 0 1 1 7.5-7.5 7.5 7.5 0 0 1-7.5 7.5z"/>
+    </symbol>
+    <use xlink:href="#a" fill="$color1"/>
+    <use xlink:href="#a" y="100" fill="$color2"/>
+    <use xlink:href="#a" y="200" fill="$color3"/>
 </svg>
