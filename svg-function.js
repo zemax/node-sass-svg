@@ -15,7 +15,7 @@ module.exports = ( basePath = './' ) => ({
                 const key   = mapping.getKey( i ).getValue();
                 const value = mapping.getValue( i ).toString();
                 
-                svg = svg.replace( `'$${key}'`, `'${encodeURIComponent( value )}'` );
+                svg = svg.replaceAll( `'$${key}'`, `'${encodeURIComponent( value )}'` );
             }
         }
         
