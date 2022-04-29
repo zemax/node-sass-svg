@@ -33,7 +33,7 @@ p {
 }
 
 :root {
-  --smiley: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100' height='300' viewBox='0 0 100 300'%3E%3Csymbol id='a'%3E%3Cpath d='M50 0a50 50 0 1 0 50 50A50 50 0 0 0 50 0zM22.5 30a7.5 7.5 0 1 1 7.5 7.5 7.5 7.5 0 0 1-7.5-7.5zM50 74h.5-1 .5c-10.82-.16-19.5-5.45-19.5-12h39c0 6.53-8.68 11.82-19.5 12zm20-36.5a7.5 7.5 0 1 1 7.5-7.5 7.5 7.5 0 0 1-7.5 7.5z'/%3E%3C/symbol%3E%3Cuse xlink:href='%23a' fill='red'/%3E%3Cuse xlink:href='%23a' y='100' fill='%230000FF'/%3E%3Cuse xlink:href='%23a' y='200' fill='%2300FF00'/%3E%3C/svg%3E%0A");
+  --smiley: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100' height='300' viewBox='0 0 100 300'%3E%3Csymbol id='a'%3E%3Cpath d='M50 0a50 50 0 1 0 50 50A50 50 0 0 0 50 0zM22.5 30a7.5 7.5 0 1 1 7.5 7.5 7.5 7.5 0 0 1-7.5-7.5zM50 74h.5-1 .5c-10.82-.16-19.5-5.45-19.5-12h39c0 6.53-8.68 11.82-19.5 12zm20-36.5a7.5 7.5 0 1 1 7.5-7.5 7.5 7.5 0 0 1-7.5 7.5z'/%3E%3C/symbol%3E%3Cuse xlink:href='%23a' fill='red'/%3E%3Cuse xlink:href='%23a' y='100' fill='%230000ff'/%3E%3Cuse xlink:href='%23a' y='200' fill='%2300ff00'/%3E%3C/svg%3E%0A");
 }
 
 .smiley--var {
@@ -41,7 +41,7 @@ p {
 }
 
 .smiley--url {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100' height='300' viewBox='0 0 100 300'%3E%3Csymbol id='a'%3E%3Cpath d='M50 0a50 50 0 1 0 50 50A50 50 0 0 0 50 0zM22.5 30a7.5 7.5 0 1 1 7.5 7.5 7.5 7.5 0 0 1-7.5-7.5zM50 74h.5-1 .5c-10.82-.16-19.5-5.45-19.5-12h39c0 6.53-8.68 11.82-19.5 12zm20-36.5a7.5 7.5 0 1 1 7.5-7.5 7.5 7.5 0 0 1-7.5 7.5z'/%3E%3C/symbol%3E%3Cuse xlink:href='%23a' fill='$color1'/%3E%3Cuse xlink:href='%23a' y='100' fill='$color2'/%3E%3Cuse xlink:href='%23a' y='200' fill='$color3'/%3E%3C/svg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100' height='300' viewBox='0 0 100 300'%3E%3Csymbol id='a'%3E%3Cpath d='M50 0a50 50 0 1 0 50 50A50 50 0 0 0 50 0zM22.5 30a7.5 7.5 0 1 1 7.5 7.5 7.5 7.5 0 0 1-7.5-7.5zM50 74h.5-1 .5c-10.82-.16-19.5-5.45-19.5-12h39c0 6.53-8.68 11.82-19.5 12zm20-36.5a7.5 7.5 0 1 1 7.5-7.5 7.5 7.5 0 0 1-7.5 7.5z'/%3E%3C/symbol%3E%3Cuse xlink:href='%23a' fill='red'/%3E%3Cuse xlink:href='%23a' y='100' fill='%230000ff'/%3E%3Cuse xlink:href='%23a' y='200' fill='%2300ff00'/%3E%3C/svg%3E%0A");
 }
 
 .smiley--import {

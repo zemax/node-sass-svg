@@ -1,11 +1,25 @@
 :root {
-	--smiley: #{svg('src/components/picto-smileysheet.svg', ('color1': red, 'color2': #0000FF, 'color3': #00FF00))};
+  --smiley: #{svg(
+      "src/components/picto-smileysheet.svg",
+      (
+        "color1": red,
+        "color2": #0000ff,
+        "color3": #00ff00,
+      )
+    )};
 }
 
 .smiley--var {
-	background-image: var(--smiley);
+  background-image: var(--smiley);
 }
 
 .smiley--url {
-	background-image: svg('src/components/picto-smileysheet.svg');
+  background-image: #{svg(
+      "src/components/picto-smileysheet.svg",
+      (
+        "color1": red,
+        "color2": #0000ff,
+        "color3": #00ff00,
+      )
+    )};
 }
