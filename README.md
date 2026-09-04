@@ -1,4 +1,4 @@
-# node-sass-svg
+# @zemax/sass-svg
 
 Inline external **svg** files into **css** with node-sass, replacing **sass variables** colors.
 
@@ -7,12 +7,12 @@ The **svg** encoding is based on [yoksel encoding](http://yoksel.github.io/url-e
 ## Install
 
 ```
-$ npm install --save-dev node-sass-svg
+$ npm install --save-dev @zemax/sass-svg
 ```
 
 ## Usage
 
-You can use this as a custom function, a custom importer, or both.
+You can use this as a custom function.
 
 Look at the _test/_ for simple examples. The result is [here](http://htmlpreview.github.io/?https://github.com/zemax/node-sass-svg/blob/master/test/index.html).
 
@@ -41,33 +41,12 @@ The function uses a SassMap as second argument for color replacements. This usag
 }
 ```
 
-Call it from the CLI:
+Use it with the [modern `sass` JS API](https://sass-lang.com/documentation/js-api/):
+```js
+const sass = require('sass');
+const svg_function = require('@zemax/sass-svg/svg-function');
+
+sass.compile('style.scss', {
+	functions: svg_function(__dirname),
+});
 ```
-node-sass --functions=node_modules/node-sass-svg/svg-function ...
-```
-
-### As a custom importer
-
-This methods imports the svg directly as a _background-image: url('...');_
-
-The main benefit is that the imported file is relative to the **scss** file.
-Second great bonus is you can put **sass** variables for colors (expressed in #rrggbb format) in your **svg**
-
-In **scss**
-```
-$red: #ff6666;
-$green: #66ff66;
-$blue: #6666ff;
-
-.smileysheet {
-	@import 'picto-smileysheet.svg';
-}
-
-```
-
-Call it from the CLI:
-```
-node-sass --importer=node_modules/node-sass-svg/svg-importer ...
-```
-
-The downside is that it repeats the css selector.

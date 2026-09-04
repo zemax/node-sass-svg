@@ -1,3 +1,5 @@
+@use "components/test-function";
+
 body {
 	margin:           0;
 	padding:          0;
@@ -36,6 +38,3 @@ p {
 		background-position: 0 -200px;
 	}
 }
-
-@import "components/test-function";
-@import "components/test-import";
