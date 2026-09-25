@@ -10,11 +10,13 @@ module.exports = (basePath = "./") => ({
     let svg = fs.readFileSync(filename, "utf8");
     svg = encode_svg(svg);
 
-    for (const [keyValue, val] of mapping.contents) {
-      const key = keyValue.text;
-      const value = val.text !== undefined ? val.text : val.toString();
+    if (mapping.contents) {
+      for (const [keyValue, val] of mapping.contents) {
+        const key = keyValue.text;
+        const value = val.text !== undefined ? val.text : val.toString();
 
-      svg = svg.replaceAll(`'$${key}'`, `'${encodeURIComponent(value)}'`);
+        svg = svg.replaceAll(`'$${key}'`, `'${encodeURIComponent(value)}'`);
+      }
     }
 
     return new SassString('url("data:image/svg+xml,' + svg + '")');
